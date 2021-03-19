@@ -62,16 +62,6 @@ form {
   button:hover {
     opacity: 0.8;
   }
-  
-  
-
-  
-
-  
-  /* Add padding to containers */
-  .container {
-    padding: 16px;
-  }
 
   
   /* Change styles for span and cancel button on extra small screens */

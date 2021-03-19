@@ -10,16 +10,25 @@ FF125D //gorgerous red
 BDDEFF //lightblue
 
 ***/
-
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+}
 body {
     background-color: #FFF6FC;
+    margin: 0;
+    padding: 0;
 }
   /* Avatar image */
   img.avatar {
     width: 40%;
     border-radius: 50%;
   }
-  
+  /* miniavatar image */
+  img.miniavatar {
+    width: 1%;
+  }
+
 * {
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     color: #510F36;

@@ -18,7 +18,15 @@ BDDEFF //lightblue
   }
   
   /* Style the links inside the navigation bar */
-  .topnav a {
+  .topnav .right-nav {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav .left-nav {
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -26,7 +34,10 @@ BDDEFF //lightblue
     text-decoration: none;
     font-size: 17px;
   }
-  
+  .topnav a img {
+      fill: #FFF6FC;
+
+  }
   /* Change the color of links on hover */
   .topnav a:hover {
     background-color: #ddd;
