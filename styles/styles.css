@@ -10,3 +10,12 @@ FF125D //gorgerous red
 BDDEFF //lightblue
 
 ***/
+
+body {
+    background-color: #FFF6FC;
+}
+
+* {
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    color: #510F36;
+}
