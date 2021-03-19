@@ -14,7 +14,12 @@ BDDEFF //lightblue
 body {
     background-color: #FFF6FC;
 }
-
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
 * {
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     color: #510F36;
@@ -23,3 +28,9 @@ body {
 .w-50 {
     width: 50%;
 }
+
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
