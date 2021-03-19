@@ -41,8 +41,8 @@ body {
 
 .profile .text p{
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
+	justify-content: flex-end;
+	align-items: flex-end;
 	color: black;
  	font-size: 20px;
   	margin: 20px;
