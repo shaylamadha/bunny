@@ -1,0 +1,16 @@
+body {
+    font-size: 100%;
+	font-family: Arial;
+	background-color: FFC2E6;
+}
+
+.header {
+    background-color: 510F36;
+	border-radius: 0px;
+}
+
+.profile {
+    background-color: FFA6DC;
+	border-radius: 20px;
+	margin: 100px;
+}
