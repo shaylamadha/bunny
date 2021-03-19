@@ -55,6 +55,7 @@ form {
   .center{
     margin: auto;
     display: block;
+    text-align: center;
   }
   
   /* Add a hover effect for buttons */

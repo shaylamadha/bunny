@@ -19,3 +19,7 @@ body {
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     color: #510F36;
 }
+
+.w-50 {
+    width: 50%;
+}
