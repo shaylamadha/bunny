@@ -1,7 +1,7 @@
 body {
     font-size: 100%;
 	font-family: Arial;
-	background-color: FFC2E6;
+	background-color: FFF6FC;
 }
 
 .header {
@@ -10,7 +10,14 @@ body {
 }
 
 .profile {
-    background-color: FFA6DC;
+    background-color: FFC2E6;
 	border-radius: 20px;
 	margin: 100px;
+}
+
+.profile img {
+	padding: 20px;
+	border-radius: 0;
+	max-width: 20em;
+	max-height: 15em;
 }
