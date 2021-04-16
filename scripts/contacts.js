@@ -1,10 +1,14 @@
 let deleteBtns = document.getElementsByClassName("delete-me");
-console.log(deleteBtns)
-
+const contactCards = document.getElementById("contacts");
+let cards = contactCards.getElementsByClassName("contact");
+console.log(cards);
 document.addEventListener("click", e => {
-    console.log('click event triggered')
     console.log(e.target);
-    if (e.target === deleteBtns[0]) {
-        console.log(true)
+    for (var i = 0; i < deleteBtns.length; i++) {
+        if (e.target === deleteBtns[i]) {
+            //fetch request to remove from database
+            //delete card
+            cards[i].remove();
+        }
     }
 })
