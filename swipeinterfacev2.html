@@ -1,4 +1,49 @@
 <html>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script>
+        
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyApFEL8cCGnwhf3XfuLnP11kQiDj9S7IQg",
+          authDomain: "bunny-e19f3.firebaseapp.com",
+          projectId: "bunny-e19f3",
+          storageBucket: "bunny-e19f3.appspot.com",
+          messagingSenderId: "721457363676",
+          appId: "1:721457363676:web:4c6a705688d521d4439219",
+          measurementId: "G-3050MR5VGH"
+        };
+
+        const firebase = require("firebase");
+        // Required for side-effects
+        require("firebase/firestore");
+      
+        firebase.initializeApp({
+        apiKey: "AIzaSyApFEL8cCGnwhf3XfuLnP11kQiDj9S7IQg",
+        authDomain: "bunny-e19f3.firebaseapp.com",
+        projectId: "bunny-e19f3"
+      });
+      
+      var db = firebase.firestore();
+      
+      db.collection("users").add({
+          first: "Ada",
+          last: "Lovelace",
+          born: 1815
+      })
+      .then((docRef) => {
+          console.log("Document written with ID: ", docRef.id);
+      })
+      .catch((error) => {
+          console.error("Error adding document: ", error);
+      });
+        
+      
+          
+      </script>
+
+
     <head>
         <title> Bunny </title>
         <link rel="stylesheet" type="text/css" href="./styles/swipeV2style.css">
@@ -15,7 +60,7 @@
                 <div class="button-container">
                     <img class="swipe-button" src="./images/favorite-icon.svg" alt="">
                 </div>
-                
+
             </div>
         </div>
         <div class="topnav">
@@ -33,21 +78,25 @@
           </div>
 
         <div class = profile>
-            <img src="./images/hotgal.jpg">
+            <img id = "profile-photo" src="./images/hotgal.jpg">
             <div class = pictures>
-                <img src="./images/hotgal.jpg">
-                <img src="./images/hotgal.jpg">
-                <img src="./images/hotgal.jpg">
-                <img src="./images/hotgal.jpg">
-                <img src="./images/hotgal.jpg">
+                <img id = "person1" src="./images/hotgal.jpg">
+                <img id = "person2"  src="./images/hotgal.jpg">
+                <img id = "person3" src="./images/hotgal.jpg">
+                <img id = "person4" src="./images/hotgal.jpg">
+                <img id = "person5" src="./images/hotgal.jpg">
             <div>
             <div class = text> 
-                <h1>Iyla V'mony</h1>
-                <p>Miami FL
+                <h1 id = "name" >Iyla V'mony</h1>
+                <p id = "comment">Miami FL
                 I have expensive tatse and I love to party
                 I don’t cook, I don’t clean
                 </p>
             </div>
         </div>
+        <script src="./scripts/swipe.js"></script>
     </body>
+
+
+
 </html>
