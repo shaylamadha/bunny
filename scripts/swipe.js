@@ -18,7 +18,12 @@ var p5 = document.getElementById("person5");
 var name_text = document.getElementById("name");
 var comment_text = document.getElementById("comment");
 
-
+function nextUser(users) { 
+    let copyOfUsers = [...users];
+    let nextUser = copyOfUsers.shift();
+    
+    return copyOfUsers;
+}
 
 
 
@@ -29,21 +34,14 @@ document.addEventListener("click", e => {
         console.log("Dislike clicked")
     } else if (e.target === swipeBtns[1]) {
         console.log("Like clicked")
-        db.collection("users").add( {
-            bio: "person3",
-            birthday:"./images/hotgal.jpg",
-            email:"abcde@gmail.com",
-            name: "bob noth",
-            pic: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*"
-        })
     }
     console.log(document.getElementsByClassName("texts"))
     profile_img.src = "./images/justin.jpg"
-    p1.src = "./images/lion.jpg"
-    p2.src = "./images/lion.jpg"
-    p3.src = "./images/lion.jpg"
-    p4.src = "./images/lion.jpg"
-    p5.src = "./images/lion.jpg"
+    // p1.src = "./images/lion.jpg"
+    // p2.src = "./images/lion.jpg"
+    // p3.src = "./images/lion.jpg"
+    // p4.src = "./images/lion.jpg"
+    // p5.src = "./images/lion.jpg"
 
     name_text.textContent = "Justin"
     comment_text.textContent = "What's my ..."
