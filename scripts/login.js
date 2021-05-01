@@ -8,6 +8,7 @@ function userLogin(event) {
     firebaseSignIn(email, password).then(user => {
       console.log(user);
       console.log("login successful")
+      location.replace('./swipeinterfacev2.html');
     })
   })
   
