@@ -29,6 +29,13 @@ document.addEventListener("click", e => {
         console.log("DISLIKE BUTTON PRESSED")
     } else if (e.target === swipeBtns[1]) {
         console.log("LIKE BUTTON PRESSED")
+        db.collection("users").add( {
+            name: "person1",
+            profile_ref:"./images/hotgal.jpg",
+            userID:"abcd"
+        }
+
+        )
     
     }
     console.log(document.getElementsByClassName("texts"))
@@ -42,4 +49,11 @@ document.addEventListener("click", e => {
     name_text.textContent = "Justin"
     comment_text.textContent = "Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello"
 
+})
+
+//get users
+db.collection("users").get().then(querySnapShot => {
+    querySnapShot.forEach(doc => {
+        console.log(doc.data());
+    })
 })
