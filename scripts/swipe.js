@@ -1,3 +1,4 @@
+const db = firebase.firestore();
 onAuthChange().then(user => {
     if (!user) {
       location.replace('./login.html');
@@ -47,13 +48,13 @@ document.addEventListener("click", e => {
     p5.src = "./images/lion.jpg"
 
     name_text.textContent = "Justin"
-    comment_text.textContent = "Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello"
+    comment_text.textContent = "What's my ..."
 
 })
 
 //get users
 db.collection("users").get().then(querySnapShot => {
     querySnapShot.forEach(doc => {
-        console.log(doc.data());
+        //console.log(doc.data());
     })
 })

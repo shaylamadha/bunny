@@ -65,3 +65,25 @@ function onAuthChange() {
   })
   
 }
+
+const logout = document.querySelector("#logout");
+if (logout) {
+  logout.addEventListener('click', () => {
+    firebaseLogout().then(() => {
+      console.log('Logout')
+    })
+  })
+}
+
+function firebaseLogout() {
+  console.log('asdf')
+  return new Promise(resolve => {
+    firebase.auth().signOut().then(() => {
+      // Sign-out successful.
+      resolve();
+    }).catch((error) => {
+      // An error happened.
+      console.log('There should not be an error when logging out')
+    });
+  })
+}
