@@ -1,6 +1,6 @@
-let email = "ff@gmail.com";
-let password = "ff";
-firebase.analytics();
+// let email = "ff@gmail.com";
+// let password = "ffffff";
+
 firebase.auth().createUserWithEmailAndPassword(email, password)
 .then((userCredential) => {
   // Signed in 
@@ -10,5 +10,6 @@ firebase.auth().createUserWithEmailAndPassword(email, password)
 .catch((error) => {
   var errorCode = error.code;
   var errorMessage = error.message;
+  console.log(errorMessage)
   // ..
 });

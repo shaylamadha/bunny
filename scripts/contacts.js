@@ -1,6 +1,14 @@
 let deleteBtns = document.getElementsByClassName("delete-me");
 const contactCards = document.getElementById("contacts");
 let cards = contactCards.getElementsByClassName("contact");
+
+
+onAuthChange().then(user => {
+    if (!user) {
+      location.replace('./login.html');
+    }
+  })
+
 console.log(cards);
 document.addEventListener("click", e => {
     console.log(e.target);

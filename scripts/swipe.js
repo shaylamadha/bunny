@@ -1,3 +1,11 @@
+onAuthChange().then(user => {
+    if (!user) {
+      location.replace('./login.html');
+    }
+  })
+
+
+
 let swipeBtns = document.getElementsByClassName("swipe-button");
 console.log(swipeBtns)
 var profile_img = document.getElementById("profile-photo");
