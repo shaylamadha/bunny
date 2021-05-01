@@ -1,0 +1,85 @@
+body {
+    font-size: 100%;
+	font-family: Arial;
+	background-color: FFF6FC;
+}
+
+.header {
+    background-color: 510F36;
+	border-radius: 0px;
+}
+
+form {
+    background-color: FFC2E6;
+    border-radius: 24px;
+   	width: 60%;
+    margin: 3% auto;
+    display: flex;
+    height: 100%;
+  }
+
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  /* Set a style for all buttons */
+  .main-button {
+    background-color: #FFF6FC;
+    color: #510F36;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px solid #510F36;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 10px;
+    margin: auto;
+  }
+
+  .picture {
+    background-color: #FFF6FC;
+    color: #510F36;
+    padding: 20px;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 100000000000000px;
+    margin: auto;
+  }
+  .sub-button {
+    color: #510F36;
+    padding: 14px 20px;
+    text-decoration: underline;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    background-color: #FFC2E6;
+  }
+
+  .center{
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+
+
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 400px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .main-button {
+      width: 100%;
+    }
+    .sub-button {
+        width: 100%;
+      }
+  }
