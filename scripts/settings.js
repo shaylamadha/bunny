@@ -17,6 +17,7 @@ function saveSettings(event) {
         }
         db.collection("users").add(data).then(() => {
             console.log('signup complete!')
+            location.replace("./swipeinterfacev2.html")
         })
     })
 }
