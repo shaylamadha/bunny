@@ -87,3 +87,24 @@ function firebaseLogout() {
     });
   })
 }
+
+function firebaseSignUp(email, password) {
+  return new Promise(resolve => {
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+  .then((userCredential) => {
+    // Signed in 
+    var user = userCredential.user;
+    // ...
+    resolve(user);
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    console.log(errorMessage)
+    // ..
+  });
+  })
+  
+}
+
+const db = firebase.firestore();

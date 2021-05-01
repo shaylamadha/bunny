@@ -1,4 +1,3 @@
-const db = firebase.firestore();
 onAuthChange().then(user => {
     if (!user) {
       location.replace('./login.html');
@@ -27,17 +26,16 @@ document.addEventListener("click", e => {
     console.log('One of the buttons clicked!')
     console.log(e.target);
     if (e.target === swipeBtns[0]) {
-        console.log("DISLIKE BUTTON PRESSED")
+        console.log("Dislike clicked")
     } else if (e.target === swipeBtns[1]) {
-        console.log("LIKE BUTTON PRESSED")
+        console.log("Like clicked")
         db.collection("users").add( {
-            name: "person1",
-            profile_ref:"./images/hotgal.jpg",
-            userID:"abcd"
-        }
-
-        )
-    
+            bio: "person3",
+            birthday:"./images/hotgal.jpg",
+            email:"abcde@gmail.com",
+            name: "bob noth",
+            pic: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*"
+        })
     }
     console.log(document.getElementsByClassName("texts"))
     profile_img.src = "./images/justin.jpg"

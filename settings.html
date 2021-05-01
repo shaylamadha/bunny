@@ -27,7 +27,7 @@
         <div class="container">
 <!--             <button class="picture center" type="profile">+Add</br>Profile</br>picture</button> -->
             <label for="pic"><b>Profile Picture</b></label>
-            <input type="url" placeholder="picture URL" name = "pic" required>
+            <input type="text" placeholder="picture URL" name = "pic" id="pic" required>
 
             <label><b>Name</b></label>
             <input type="text" placeholder="your name here" id="name" required>
@@ -47,9 +47,14 @@
             <label><b>Bio</b></label>
             <input type="text" placeholder="tell us about yourself" id="bio">
 
-            <button class="main-button center" type="save" href="./swipeinterfacev2">Save</button>
+            <button class="main-button center" type="submit">Save</button>
         </div>
     </form>
-
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script src="scripts/firebase.js"></script>
+    <script src="scripts/settings.js"></script>
 </body>
 </html>
