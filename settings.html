@@ -25,19 +25,22 @@
     <form action="./swipeinterfacev2.html">
 
         <div class="container">
-            <button class="picture center" type="profile">+Add</br>Profile</br>picture</button>
+<!--             <button class="picture center" type="profile">+Add</br>Profile</br>picture</button> -->
 
-            <label><b>Name</b></label>
-            <input type="text" placeholder="your name here">
+            <label for="pic"><b>Profile Picture</b></label>
+            <input type="url" placeholder="picture URL" name = "pic" required>
 
-            <label><b>Birthday</b></label>
-            <input type="text" placeholder="MM/DD/YYYY">
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="your name here" name = "name" required>
 
-            <label><b>Email</b></label>
-            <input type="text" placeholder="sugarbaby@bunny.com">
+            <label for="bday"><b>Birthday</b></label>
+            <input type="text" placeholder="MM/DD/YYYY" name="bday" required>
 
-            <label><b>Password</b></label>
-            <input type="text" placeholder="create password">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="sugarbaby@bunny.com" name="email" required>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="create password" name="password" required>
 
             <label><b>Venmo / Cashapp</b></label>
             <input type="text" placeholder="@your-venmo / $yourCashApp">
